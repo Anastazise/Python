@@ -1,35 +1,40 @@
 import math
 import random
 
-print('Введите один из знаков опрации [+, -, *, /, x^n, random, !, acos]')
+print('Введите один из знаков опрации [+, -, *, /, x^n, random, !, acos] ')
 
 proc = input()
 
 if proc == '+':
-    a = input()
-    b = input()
-    print(a + b)
-else if proc == '-':
-    a = input()
-    b = input()
-    print(a - b)
-else if proc == '*':
-    a = input()
-    b = input()
-    print(a * b)
-else if proc == '/':
+    a = int(input())
+    b = int(input())
+    с = a+b
+    print(с)
+elif proc == '-':
+    a = int(input())
+    b = int(input())
+    с = a-b
+    print(с)
+elif proc == '*':
+    a = int(input())
+    b = int(input())
+    с = a * b
+    print(с)
+elif proc == '/':
     a = float(input())
     b = float(input())
-    print(a/b)
-else if proc == 'x^n':
-    a = input()
-    b = input()
-    print(a ** b)
-else if proc == 'random':
+    с = a/b
+    print(с)
+elif proc == 'x^n':
+    a = int(input())
+    b = int(input())
+    с = a ** b
+    print(с)
+elif proc == 'random':
    print(random.randint(0,1000))
-else if proc == '!':
-    a = input()
+elif proc == '!':
+    a = int(input())
     print(math.factorial(a))
-else if proc == 'acos':
-    a = input()
+elif proc == 'acos':
+    a = float(input())
     print(math.acos(a))
